@@ -1,0 +1,11 @@
+message = 5,000,000
+message_cost = 1 per quote endpoint (per ticker)
+api call quote = 5,000,000
+tickers = 4878
+
+batch_cnt_per_month = 5,000,000/4878 = 1025
+trading_days = 22
+batch_cnt_per_day = 1025/22 = 46
+normal_trading_hours = 6.5
+batch_cnt_per_hour = 40/6.5 = 6  (10 mins sleep between batch check)
+pre_market_batch_cnt_per_hour = 5.5/6.5 = 1 (60 mins sleep between batch check)
